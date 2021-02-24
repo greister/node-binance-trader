@@ -14,7 +14,7 @@ module.exports = envalid.cleanEnv(process.env, {
     DATABASE_INSERT_PAIR_HISTORY: envalid.bool({ default: true }),
     DATABASE_URL: envalid.str({
         default:
-            "DATABASE_URL=postgres://postgres:postgres@127.0.0.1:5432/postgres",
+            "DATABASE_URL=postgresql://postgres:postgres@127.0.0.1:5432/postgres",
     }),
     GMAIL_ADDRESS: envalid.str({ default: "" }),
     GMAIL_APP_PASSWORD: envalid.str({ default: "" }),
